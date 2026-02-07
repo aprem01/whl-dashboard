@@ -69,3 +69,33 @@ export const MODEL_COLORS = {
   'MLP': '#ef4444',
   'ENS': '#3b82f6',
 };
+
+// Model Lab defaults & mappings
+export const DEFAULT_POWER_WEIGHTS = {
+  elo: 0.25, bt: 0.25, xgd: 0.15, gd: 0.12,
+  winPct: 0.08, sd: 0.05, gsax: 0.05, pyth: 0.05,
+};
+
+export const DEFAULT_PREDICTION_WEIGHTS = {
+  elo: 0.20, bt: 0.20, rf: 0.20, gbm: 0.20,
+  lr: 0.10, mlp: 0.10,
+};
+
+export const POWER_NORM_FIELDS = {
+  elo: 'eloNorm', bt: 'btNorm', xgd: 'xgdPgNorm', gd: 'gdPgNorm',
+  winPct: 'winPctNorm', sd: 'sdPgNorm', gsax: 'goalieGsaxNorm', pyth: 'pythExpNorm',
+};
+
+export const PREDICTION_PROB_FIELDS = {
+  elo: 'pElo', bt: 'pBt', lr: 'pLr', rf: 'pRf', gbm: 'pGbm', mlp: 'pMlp',
+};
+
+export const POWER_WEIGHT_LABELS = {
+  elo: 'ELO Rating', bt: 'Bradley-Terry', xgd: 'xG Diff/GP', gd: 'Goal Diff/GP',
+  winPct: 'Win %', sd: 'Shot Diff/GP', gsax: 'Goalie GSAx', pyth: 'Pythagorean',
+};
+
+export const PREDICTION_WEIGHT_LABELS = {
+  elo: 'ELO', bt: 'Bradley-Terry', lr: 'Logistic Regression',
+  rf: 'Random Forest', gbm: 'Gradient Boosting', mlp: 'MLP Neural Net',
+};

@@ -10,6 +10,7 @@ import Methodology from './components/Methodology';
 import Story from './components/Story';
 import GoalieAnalysis from './components/GoalieAnalysis';
 import ClusterAnalysis from './components/ClusterAnalysis';
+import ModelLab from './components/ModelLab';
 
 const TABS = [
   { id: 'story', label: 'Full Story', icon: '📖' },
@@ -17,6 +18,7 @@ const TABS = [
   { id: 'rankings', label: 'Power Rankings', icon: '🏆' },
   { id: 'matchups', label: 'Matchup Predictions', icon: '🎯' },
   { id: 'models', label: 'Model Comparison', icon: '📈' },
+  { id: 'lab', label: 'Model Lab', icon: '🎛️' },
   { id: 'clusters', label: 'Team Tiers', icon: '🔬' },
   { id: 'goalies', label: 'Goalie Analysis', icon: '🥅' },
   { id: 'disparity', label: 'Line Disparity', icon: '⚖️' },
@@ -36,6 +38,7 @@ export default function App() {
       case 'rankings': return <Rankings rankings={rankings} />;
       case 'matchups': return <Matchups predictions={data.matchupPredictions} rankings={rankings} />;
       case 'models': return <ModelComparison models={data.modelComparison} featureImportance={data.featureImportance} />;
+      case 'lab': return <ModelLab data={data} />;
       case 'clusters': return <ClusterAnalysis clusterData={data.clusterData} rankings={rankings} />;
       case 'goalies': return <GoalieAnalysis goalies={data.goalieAnalysis} />;
       case 'disparity': return <LineDisparity disparity={data.disparity} stats={data.disparityStats} />;

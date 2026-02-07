@@ -13,3 +13,17 @@ body {
 ::-webkit-scrollbar-thumb:hover { background: #3d5066; }
 
 .recharts-tooltip-wrapper { z-index: 50 !important; }
+
+input[type="range"] { -webkit-appearance: none; appearance: none; height: 6px; border-radius: 3px; outline: none; }
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%;
+  background: #e2e8f0; border: 2px solid #0f1923; cursor: grab;
+  box-shadow: 0 0 4px rgba(0, 212, 255, 0.3);
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #00d4ff; box-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 16px; height: 16px; border-radius: 50%;
+  background: #e2e8f0; border: 2px solid #0f1923; cursor: grab;
+}
