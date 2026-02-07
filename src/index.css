@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  background: #0f1923;
+  color: #e2e8f0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #0f1923; }
+::-webkit-scrollbar-thumb { background: #2d3f52; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #3d5066; }
+
+.recharts-tooltip-wrapper { z-index: 50 !important; }
